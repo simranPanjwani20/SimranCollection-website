@@ -1,0 +1,54 @@
+extends base.pug
+
+block style 
+       style  
+         include ../static/style.css
+         include ../static/saree.css
+block script 
+   
+block content
+ 
+     h1 Our Gorgeous Suit Collection
+     section#container
+         div.con1
+           img.card-image(src='https://th.bing.com/th/id/R.96cdc0c94aa763e7e5d6ec50cc8deecb?rik=PxEk%2fGRF2ZlmJw&riu=http%3a%2f%2fwww.stylesgap.com%2fwp-content%2fuploads%2f2014%2f10%2fLatest-Indian-Kalidar-Suits-Best-Salwar-Kameez-Collection-for-Women-2014-2015-2.jpg&ehk=AtielViYG2lpCzmbNXTuFmp%2focJQPxEYrlYiQKNhSFw%3d&risl=&pid=ImgRaw&r=0')
+           div.card-body
+               h5.card-title A-cut Suit
+               p.card-text
+                  | Beautiful suit at the best price in the market.
+               li.list #[em.em PRICE:] Rs #[p.suitprice 700]
+               button#suit1(type="submit") 
+                    |Add to Cart
+
+         div.con2
+           img.card-image(src='https://3.bp.blogspot.com/-lwjIEFVF_nI/V9-sEyHG7-I/AAAAAAAAAPU/FPhe886Z7ZEew1doMA0k4P4Ca3Ajm4j2ACLcB/s1600/salwar-kameez-online.jpg')
+           div.card-body
+               h5.card-title Straight Suit
+               p.card-text
+                 | Beautiful suit at the best price in the market.
+               li.list #[em.em PRICE:] Rs #[p.suitprice 600]
+               button#suit2(type="submit") 
+                    |Add to Cart
+            
+         div.con3 
+            img.card-image(src='https://www.efashionlady.com/wp-content/uploads/2020/02/G3-WSS11856_punjabi-girl-salwar-suit.jpg')
+            div.card-body
+               h5.card-title Salwar Kameez
+               p.card-text
+                 | Beautiful suit at the best price in the market.
+               li.list #[em.em PRICE:] Rs #[p.suitprice 1100]
+               button#suit3(type="submit") 
+                    |Add to Cart
+     .cart
+       button#cart(type="submit") 
+           |view cart
+       button#price(type="submit") 
+           |view price
+
+     ul#ul
+     #tprice
+      h4 Total Price =
+  
+block script 
+     script 
+       include ../suit.js

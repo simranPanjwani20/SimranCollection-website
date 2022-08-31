@@ -1,0 +1,53 @@
+extends base.pug
+
+block style 
+       style  
+         include ../static/style.css
+         include ../static/saree.css
+block script 
+     
+block content
+     h1 Our Gorgeous Lehenga Collection
+     section#container
+         div.con1
+           img.card-image(src='https://th.bing.com/th/id/OIP.tsz1MmFqwPvjrKQQ-bxHTwHaJ4?pid=ImgDet&rs=1')
+           div.card-body
+               h5.card-title Mehroon Lehenga
+               p.card-text
+                  | Beautiful cotton saree at the best price in the market.
+               li.list #[em.em PRICE:] Rs #[p.lehengaprice 11000]
+               button#lehenga1(type="submit") 
+                    |Add to Cart
+
+         div.con2
+           img.card-image(src='https://th.bing.com/th/id/OIP.8t64ylk0ec9DbeX1RABj_QHaJ4?pid=ImgDet&w=1200&h=1600&rs=1')
+           div.card-body
+               h5.card-title Designer Purple Lehenga
+               p.card-text
+                 | Beautiful cotton saree at the best price in the market.
+               li.list #[em.em PRICE:] Rs #[p.lehengaprice 8800]
+               button#lehenga2(type="submit") 
+                    |Add to Cart
+         div.con3 
+            img.card-image(src='https://th.bing.com/th/id/OIP.tEdZp_UD3yt5tBkUaCfetgHaJ1?pid=ImgDet&w=550&h=731&rs=1')
+            div.card-body
+               h5.card-title Contrast Lehenga
+               p.card-text
+                 | Beautiful cotton saree at the best price in the market.
+               li.list #[em.em PRICE:] Rs #[p.lehengaprice 6500]
+               button#lehenga3(type="submit") 
+                    |Add to Cart
+
+     .cart
+       button#cart(type="submit") 
+           |view cart
+       button#price(type="submit") 
+           |view price
+
+     ul#ul
+     #tprice
+      h4 Total Price =
+  
+block script 
+     script 
+       include ../lehenga.js

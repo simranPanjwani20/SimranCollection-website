@@ -1,0 +1,62 @@
+extends base.pug
+
+block style 
+       style  
+         include ../static/style.css
+         include ../static/saree.css
+         
+
+block content
+     h1 Our Gorgeous Saree Collection
+     section#container
+         div.con1
+           img.card-image(src='https://th.bing.com/th/id/OIP.ZXyO2VZ3GP_TMqMhSSVX-AHaLH?pid=ImgDet&w=720&h=1080&rs=1')
+           div.card-body
+               h5.card-title Blue Saree
+               p.card-text
+                  | Beautiful cotton saree at the best price in the market.
+               li.list #[em.em PRICE:] Rs  #[p.sareeprice 500]
+               button#saree1(type="submit") 
+                    |Add to Cart
+
+         div.con2
+           img.card-image(src='https://th.bing.com/th/id/OIP.mn4Id3kICkuC-CHjuRrDIAHaKt?pid=ImgDet&rs=1')
+           div.card-body
+               h5.card-title Cotton Saree
+               p.card-text
+                 | Beautiful cotton saree at the best price in the market.
+               li.list #[em.em PRICE:] Rs   #[p.sareeprice 700]
+               button#saree2(type="submit") 
+                    |Add to Cart
+            
+         div.con3 
+            img.card-image(src='https://th.bing.com/th/id/OIP.KPrBmRmI1y6mGofWCEIpxwHaLH?pid=ImgDet&w=600&h=900&rs=1')
+            div.card-body
+               h5.card-title Shiffon Saree
+               p.card-text
+                 | Beautiful cotton saree at the best price in the market.
+               li.list #[em.em PRICE:] Rs   #[p.sareeprice 900]
+               button#saree3(type="submit") 
+                    |Add to Cart
+     .cart
+       button#cart(type="submit") 
+           |view cart
+       button#price(type="submit") 
+           |view price
+
+     ul#ul
+     #tprice
+      h4 Total Price =
+     
+
+          
+        
+    
+block script 
+     script 
+       include ../index.js
+
+    
+       
+       
+      

@@ -1,0 +1,12 @@
+extends base.pug
+block style 
+       style  
+         include ../static/style.css
+block content
+    section#explore
+            a(href='/saree'). 
+                   #[img.pic(src='../static/saree1.jpg')] #[h3.productname Sarees]
+            a(href='/suit').
+                   #[img.pic(src='../static/suit1.jpg')]   #[h3.productname Suits] 
+            a(href='/lehenga').
+                   #[img.pic(src='../static/lehenga1.jpg')] #[h3.productname Lehengas]

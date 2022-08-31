@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.body{
+ background-color: rgb(87 194 200) ;
+ width: 100%;
+}
+.con{
+    text-align: center;
+    margin: 50px;
+    font-size: large;
+}
+.simranCollection{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+    text-decoration: underline;
+
+}
+#title{
+    text-align: center;
+    color: white;
+    background-color: rgb(4, 4, 100);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 15px;
+
+}
+
+#navprop{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+    background-color: rgb(4, 4, 100);
+  
+}
+#navprop li{
+    list-style: none; 
+    margin: 10px;
+    padding: 10px;
+    
+   
+}
+#navprop li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 7px;    
+}
+#navprop li a:hover{
+    
+    text-decoration: underline;
+}
+#introsection {
+    background-image: url("/static/background.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; background-color: #ccc;
+    height: 450px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 20px;
+}
+#introsection h6{
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 250px; 
+}
+#explore{
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding-bottom: 70px;
+ background-color: rgb(87 194 200);
+}
+#explore a{
+    text-decoration: none;
+}
+#explore a:hover{
+    text-decoration: underline;
+    color: black;
+}
+img{
+    height: 500px;
+    width: 352px;
+    margin: 15px;
+    margin-top: 20px;
+   
+}
+#footer{
+background-color: rgb(179, 195, 195);
+display: flex;
+align-items: flex-end;
+justify-content: end;
+
+padding: 20px;
+padding-bottom: 20px;
+height: 10%;
+width: 100%;
+font-size: 20px;
+}
+.productname{
+    text-align: center;
+    font-size: larger;
+    color: black;
+
+}
+button{
+    width: 141px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color:rgb(4, 4, 100);
+    color: lemonchiffon;
+    font-size: 20px;
+    font-weight: bolder;
+    outline: none;
+    border: none;
+    align-self: center;
+}
+button:hover{
+    background-color: rgb(6, 6, 162);
+}
+.cart{
+    text-align: center;
+}

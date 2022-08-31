@@ -1,0 +1,39 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title pug website
+        style 
+         include ../static/style.css
+        
+    body 
+       nav#navbar 
+        h1#title Simran Collection
+        ul#navprop 
+         li #[a(href="/") Home ]
+         li #[a(href="/about") About ]
+         li #[a(href="/products") Products ]
+         li #[a(href="/contact") Contact Us]
+         li #[a(href="/cart") Cart]
+       
+       section#introsection 
+        h3 Explore our exclusive collection at the best prices you can ever find!
+        
+        h6 Ranging from beautiful sarees to stylish gowns, this is your one stop destination. 
+        br 
+        br
+        h5 CHECK OUR COLLECTION
+
+       section#explore
+            a(href='/saree'). 
+                   #[img.pic(src='../static/saree1.jpg')] #[h3.productname Sarees]
+            a(href='/suit').
+                   #[img.pic(src='../static/suit1.jpg')]   #[h3.productname Suits] 
+            a(href='/lehenga').
+                   #[img.pic(src='../static/lehenga1.jpg')] #[h3.productname Lehengas]
+
+           
+       footer#footer 
+                    | Copyrights © 2022 SimranCollection.com | All rights reserved
+     
