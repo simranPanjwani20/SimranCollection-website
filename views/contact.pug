@@ -9,12 +9,18 @@ block content
           h1.heading Contact Us
           div.container
               form(action="/contact" , method='post', class='form')
-                  input(type="text", class='input', name='name', placeholder='Enter your name')
-                  input(type="number", class='input', name='age', placeholder='Enter your age')
-                  input(type="number", class='input', name='number', placeholder='Enter your number')
-                  input(type="email", class='input', name='email', placeholder='Enter your email')
-                  input(type="text", class='input', name='address', placeholder='Enter your Address')
-                  input(type="text", class='input', name='others', placeholder='Suggestion')
+                  input(type="text", class='input', name='name', placeholder='Enter your name',
+                  required)
+                  input(type="number", class='input', name='age', placeholder='Enter your age',
+                  required)
+                  input(type="number", class='input', name='number', placeholder='Enter your number',
+                  required)
+                  input(type="email", class='input', name='email', placeholder='Enter your email',
+                  required)
+                  input(type="text", class='input', name='address', placeholder='Enter your Address',
+                  required)
+                  input(type="text", class='input', name='others', placeholder='Suggestion',
+                  required)
                   button(type="submit") 
                     |submit
                   

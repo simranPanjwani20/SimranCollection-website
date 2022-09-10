@@ -49,15 +49,15 @@ app.get('/lehenga', (req , res)=> {
 app.get('/products', (req , res)=> {
                 res.status(200).render('products.pug');
                   });     
-app.get('/cart', (req , res)=> {
-  res.status(200).render('cart.pug');
-                      });         
+// app.get('/cart', (req , res)=> {
+//   res.status(200).render('cart.pug');
+//                       });         
 
     //to get contact form info from post req using express(body parser)
 app.post('/contact', (req, res )=>{
     var myData = new Contact(req.body);
     myData.save().then(()=>{
-        res.send('your info saved')
+        res.send('Your form is submiited.')
     }).catch(()=>{
         res.status(400).send('not saved')
     })
